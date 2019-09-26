@@ -26,16 +26,16 @@ app.title=tabtitle
 
 app.layout = html.Div(children=[
     html.H1(myheading1),
-    dcc.RadioItems(
+    dcc.RadioItems( #dashboard components
         id='your_input_here',
-        options=[
-                {'label':list_of_options[0], 'value':list_of_images[0]},
+        options=[ #unique features specific to the dc components, 
+                #label and values to show what you want user to see, not the real name
                 {'label':list_of_options[1], 'value':list_of_images[1]},
                 {'label':list_of_options[2], 'value':list_of_images[2]},
                 {'label':list_of_options[3], 'value':list_of_images[3]},
                 {'label':list_of_options[4], 'value':list_of_images[4]},
                 ],
-        value=list_of_images[5],
+        value=list_of_images[0], #which one is the default picture to show before they choosing 
         ),
     html.Div(id='your_output_here', children=''),
     html.Br(),
@@ -50,7 +50,7 @@ app.layout = html.Div(children=[
 @app.callback(Output('your_output_here', 'children'),
               [Input('your_input_here', 'value')])
 def radio_results(image_you_chose):
-    return html.Img(src=app.get_asset_url(image_you_chose), style={'width': 'auto', 'height': '50%'}),
+    return html.Img(src=app.get_asset_url(image_you_chose), style={'width': 'auto', 'height': '50%'}),#can also use 200px, percentage will auto adjust
 
 
 ############ Deploy
