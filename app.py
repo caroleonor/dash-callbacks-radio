@@ -6,12 +6,12 @@ from dash.dependencies import Input, Output, State
 
 ########### Define your variables ######
 
-myheading1='How to use callbacks'
-tabtitle = 'xkcd'
-list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot']
-list_of_images=['outlier.png', 'correlation.png', 'gitcommit.jpg', 'scatterplot.png', 'good_code.png']
+myheading1='What is ADDIE'
+tabtitle = 'ADDIE'
+list_of_options=['Assessment', 'Design', 'development', 'Implementation','Evaluation']
+list_of_images=['Assessment-1.jpg', 'the-most-valuable-skills-for-instructional-designers-01.jpg', 'Web-design-Website-Development-Company-in-jodhpur-copy-1140x641.jpg', 'MKTCO14957-Implementation-infographic-for-TL-Blog-F.png', 'cite-infographic3.jpg']
 sourceurl = 'https://xkcd.com/'
-githublink = 'https://github.com/austinlasseter/dash-callbacks-radio'
+githublink = 'https://github.com/caroleonor/dash-callbacks-radio/edit/master/app.py'
 
 
 ########## Set up the chart
